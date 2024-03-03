@@ -16,6 +16,15 @@ dependencies = ["torch>1.6"]
 optional-dependencies = { test=["hypothesis","pre-commit"] }
 urls = { Homepage= "https://github.com/ditschuk/pytorch-tsmixer" }
 
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+deptry = "^0.1.0"
+
+
 [tool.setuptools]
 packages = ["torchtsmixer"]
 
@@ -24,6 +33,7 @@ line-length = 92
 target-version = ['py310']
 include = '\.pyi?$'
 extend-exclude = '.+/(dist|.venv|venv|build)/.+'
+
 
 
 [tool.isort]
